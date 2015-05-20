@@ -1,4 +1,4 @@
-# practice-problems
+# Practice Problems
 A repo containing some fun coding challenges. They are in no particular order.
 
 ## Bigger words
@@ -33,7 +33,7 @@ Build a function that sorts an array into a multidimensional array grouped by da
 
 - Write a function that takes one parameter 
 	- Parameter 1 - An array of anything
-- The function should output a multidimensional grouped by data type
+- The function should output a multidimensional array grouped by data type
 - Example: 
 	- `var myArray = ['hello', 34, true, false, 'goodbye', 56, 12, '25', true];`
 	- `groupArray(myArray);`
