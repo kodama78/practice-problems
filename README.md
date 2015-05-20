@@ -12,7 +12,32 @@ Build a function that takes in a string and an array of strings. The function sh
 - Example:
 	- `var myArray = ['bug', 'insect', 'mammal', 'reptile', 'mammoth', 'turtles'];`
 	- `biggerWords('whales', myArray);`
-	- Output - `['reptile', 'mammoth', 'turtles'];
+	- Output - `['reptile', 'mammoth', 'turtles']`
+
+## Total Reverse 
+
+Build a function that takes in an array and reverses it
+
+- Write a function that takes one parameter
+	- Parameter 1 - An array of anything
+- The function should output an array that is in reverse order from the input array
+- Example: 
+	- `var myArray = ['hello', 45, 'Bob', 'what', '23'];`
+	- `arrayReverse(myArray);`
+	- Output - `['23', 'what', 'Bob', 45, 'hello']`
+- Avoid using pre-built functions that do something similar
+
+## One to Multi
+
+Build a function that sorts an array into a multidimensional array grouped by data type
+
+- Write a function that takes one parameter 
+	- Parameter 1 - An array of anything
+- The function should output a multidimensional grouped by data type
+- Example: 
+	- `var myArray = ['hello', 34, true, false, 'goodbye', 56, 12, '25', true];`
+	- `groupArray(myArray);`
+	- Output - `[['hello, 'goodbye', '25'], [34, 56, 12], [true, false, true]]`
 
 ## Sort
 
@@ -24,7 +49,7 @@ Build a function that takes in an array of strings and outputs a new array with 
 - Example:
 	-`var myArray = ['mouse', 'cat', 'dog', 'human'];`
 	- `sort(myArray);`
-	- Output - `['cat', 'dog', 'human', 'mouse'];`
+	- Output - `['cat', 'dog', 'human', 'mouse']`
 - Try doing this using a **Bubble Sort**, if you are unsure what that is <a href="https://www.google.com" target="_blank">Click Here</a>
 
 ## FizzBuzz
@@ -56,7 +81,7 @@ Build a function that will translate text into "Pig Latin" Take the first conson
 	- Example: 
 		- `var myString = "Hello my name is Stu"`
 		- `translate(myString);
-		- Output - `"ellohay ymay ameya siay tusay"`;
+		- Output - `"ellohay ymay ameya siay tusay"`
 
 #### Making it better!
 
