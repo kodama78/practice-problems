@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Practice Problems</title>
+	<script type="text/javascript">
+	//Bigger words
+	var output = null;
+	function wordCompare (string_one, array_of_strings){
+		var output = [];
+		for (var i = 0; i < array_of_strings.length; i++){
+			if (array_of_strings[i].length > string_one.length){
+				output.push(array_of_strings[i]);
+			}
+		}
+		return output;
+	}
+
+	//Total Reverse
+	var output = null;
+	function total_reverse(my_array){
+		var output = [];
+		var array_reversed = [];
+		for(var i = my_array.length-1; i >=0; i--){
+			array_reversed.push(my_array[i]);
+		}
+		output = array_reversed;
+		return output;
+	}
+
+	//One to Multi
+	var output = null;
+	function sort_array(my_array){
+		var swap = true;
+		while(swap == true){
+			swap = false;
+			for (var i = 0; i < my_array.length; i++){
+				if ( my_array[i] > my_array[i+1]){
+					var temp = my_array[i];
+					my_array[i] = my_array[i+1]
+					my_array[i+1] = temp;
+					swap = true;
+				}
+			}
+		}
+		output = my_array;
+		return output;
+	}
+
+	//Fizz Buzz
+	function fizz_buzz(){
+		for (var i = 1; i < 101; i++){
+			if (i % 3 == 0 && i % 5 == 0){
+				console.log('FizzBuzz');
+			}
+			else if(i % 3 == 0){
+				console.log('Fizz');
+			}
+			else if (i % 5 == 0){
+				console.log('Buzz');
+			}
+			else {
+				console.log(i);
+			}
+		}
+	}
+	//Spirals
+	function fib_sequence(fib_index){
+		var total = null;
+		var n1 = n2;
+		var n2 = n3;
+		var n3 = n1+n2;
+		for (var i = 0; i < fib_index; i++){
+			if (i == 0){
+				n1 = 0;
+				n2 = 1;
+				n3 = (n1+n2);
+			} else {
+				n1 = n2;
+				n2 = n3;
+				n3 = (n1+n2);
+			}
+		}
+		return n3;
+	}
+	</script>
+</head>
+<body>
+
+</body>
+</html>
