@@ -65,23 +65,29 @@
 	}
 	//Spirals
 	function fib_sequence(fib_index){
-		var total = null;
-		var n1 = n2;
-		var n2 = n3;
-		var n3 = n1+n2;
-		for (var i = 0; i < fib_index; i++){
-			if (i == 0){
-				n1 = 0;
-				n2 = 1;
-				n3 = (n1+n2);
-			} else {
-				n1 = n2;
-				n2 = n3;
-				n3 = (n1+n2);
-			}
+		var f = [0, 1];
+		for ( var i = 1; i < fib_index; i++){
+			f.push(f[i-1]+[f[i])
 		}
-		return n3;
+		return f.join('');
 	}
+
+	//Pig Latin
+	var hello = "hello there";
+		function piggy(a_string){
+			var array_of_strings = null;
+			var pig_latin_array = [];
+			array_of_strings = (a_string.split(" "));
+			for (var i = 0; i < array_of_strings.length; i++){
+				var word = array_of_strings[i];
+				var head_chop = word.substr(0,1);
+				var root = word.substr(1);
+				word = root + head_chop + 'ay';
+				pig_latin_array.push(word);
+			}
+			var phrase = pig_latin_array.join(" ");
+			return phrase;
+		}
 	</script>
 </head>
 <body>
