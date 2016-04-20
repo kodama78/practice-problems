@@ -1,12 +1,13 @@
-## Bigger words
+## math combo
 
-Build a function that takes in a string and an array of strings. The function should output an array of strings that are longer than the single input string.
+Build a function, cocococombomath, that takes 5 numbers as parameters.  
+It:
+	- multiplies the 1st number x the 2nd number
+	- the result of that, it adds the 3rd number
+	- the result of that, it divides by the 4th number
+	- the result of that, it subtracts the 5th number
+	- it returns that result
 
-- Write a function that takes two parameters
-	- Parameter 1 - A string
-	- Parameter 2 - An array of strings
-- The function should output all the words from the input array (parameter 2) that are longer than the input string (parameter 1)
-- Example:
-	- `var myArray = ['bug', 'insect', 'mammal', 'reptile', 'mammoth', 'turtles'];`
-	- `biggerWords('whales', myArray);`
-	- Output - `['reptile', 'mammoth', 'turtles']`
+- example:
+	- cocococombomath(3,2,6,3,5)
+		- Returns -2
