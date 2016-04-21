@@ -10,4 +10,4 @@ It:
 
 - example:
 	- cocococombomath(3,2,6,3,5)
-		- Returns -2
+		- Returns -1
