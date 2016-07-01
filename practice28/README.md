@@ -19,7 +19,7 @@ Build a function takes in a number and converts it to roman numerals
   - Larger than base digit: Writen as the base digit plus whatever smaller digits after it, totally up to the number, so for example
     - 6 is 5 plus 1, or VI
     - 11 is 10 plus 1, or XI
-    - 56 is 50 plus 5 plus 1, or LXI
+    - 56 is 50 plus 5 plus 1, or LVI
     - 67 is 50 plus 10 plus 5 plus 2, or LXVII
   
 
@@ -29,4 +29,4 @@ Build a function takes in a number and converts it to roman numerals
 - Example: 
 	- `var the_number = 62;`
 	- `romanNumerals(the_number);`
-	- Returns - `LXVII`
+	- Returns - `LXIIV`
