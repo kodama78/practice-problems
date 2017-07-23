@@ -45,7 +45,7 @@
 - none available
 
 ### Level 7
-- none available
+- <a href="practice35/README.md" target="_blank">Factor of Sequence</a>
 
 ### Level 8
 - none available
