@@ -45,7 +45,7 @@
 - none available
 
 ### Level 7
-- <a href="practice35/README.md" target="_blank">Factor of Sequence</a>
+- <a href="practice35/README.md" target="_blank">Dependencie Calculation</a>
 
 ### Level 8
 - none available
