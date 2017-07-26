@@ -4,6 +4,8 @@
 - <a href="practice31/README.md" target="_blank">math combo</a>
 - <a href="practice32/README.md" target="_blank">find middle of string</a>
 - <a href="practice33/README.md" target="_blank">invert positive number</a>
+- **NEW** <a href="practice36/README.md" target="_blank">get vowels</a>
+- **NEW** <a href="practice37/README.md" target="_blank">alternate caps</a>
 
 ### Level 1
 - <a href="practice02/README.md" target="_blank">Array reverser</a>
@@ -31,7 +33,7 @@
 - <a href="practice12/README.md" target="_blank">Math Sequence</a>
 - <a href="practice14/README.md" target="_blank">Array Factors</a>
 - <a href="practice23/README.md" target="_blank">Find Factors</a>
-- **NEW** <a href="practice28/README.md" target="_blank">Roman Numerals</a>
+- <a href="practice28/README.md" target="_blank">Roman Numerals</a>
 
 ### Level 4
 - <a href="practice15/README.md" target="_blank">Numeric Toggles</a>
@@ -45,7 +47,7 @@
 - none available
 
 ### Level 7
-- <a href="practice35/README.md" target="_blank">Dependencie Calculation</a>
+- **NEW** <a href="practice35/README.md" target="_blank">Dependencie Calculation</a>
 
 ### Level 8
 - none available
