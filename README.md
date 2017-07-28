@@ -47,7 +47,7 @@
 - none available
 
 ### Level 7
-- **NEW** <a href="practice35/README.md" target="_blank">Dependencie Calculation</a>
+- **NEW** <a href="practice35/README.md" target="_blank">Dependency Calculation</a>
 
 ### Level 8
 - none available
