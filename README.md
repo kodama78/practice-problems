@@ -28,7 +28,7 @@
 - <a href="practice25/README.md" target="_blank">Array Add</a>
 - <a href="practice26/README.md" target="_blank">Search Array</a>
 
-### Levle 3
+### Level 3
 - <a href="practice08/README.md" target="_blank">Char Convert</a>
 - <a href="practice12/README.md" target="_blank">Math Sequence</a>
 - <a href="practice14/README.md" target="_blank">Array Factors</a>
