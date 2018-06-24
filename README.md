@@ -4,8 +4,8 @@
 - <a href="practice31/README.md" target="_blank">math combo</a>
 - <a href="practice32/README.md" target="_blank">find middle of string</a>
 - <a href="practice33/README.md" target="_blank">invert positive number</a>
-- **NEW** <a href="practice36/README.md" target="_blank">get vowels</a>
-- **NEW** <a href="practice37/README.md" target="_blank">alternate caps</a>
+- <a href="practice36/README.md" target="_blank">get vowels</a>
+- <a href="practice37/README.md" target="_blank">alternate caps</a>
 
 ### Level 1
 - <a href="practice02/README.md" target="_blank">Array reverser</a>
@@ -45,13 +45,13 @@
 - <a href="practice16/README.md" target="_blank">Factor of Sequence</a>
 
 ### Level 6
-- none available
+- **NEW** <a href="practice39/README.md" target="_blank">Wave Patterns (easy/medium)</a>
 
 ### Level 7
-- **NEW** <a href="practice35/README.md" target="_blank">Dependency Calculation</a>
+- <a href="practice35/README.md" target="_blank">Dependency Calculation</a>
 
 ### Level 8
-- none available
+- **NEW** <a href="practice39/README.md" target="_blank">Wave Patterns (hard)</a>
 
 ### Level 9
 - <a href="practice18/README.md" target="_blank">Calculate Multi Average</a>
