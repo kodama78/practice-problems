@@ -1,17 +1,17 @@
 
 
-function sumArray(a){
-	return a.reduce( (a, c)=> a+c,0)
-}
-
-function fitWithinVal(){
+function countOccurences(){
 
 }
 
-function getAllNamesShorterThan(){
+function wordLengths(){
 
 }
 
-function makeLabel(){
+function getMinMaxMean(){
+
+}
+
+function findMode(){
 
 }
