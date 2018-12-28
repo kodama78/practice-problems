@@ -1,17 +1,17 @@
 
 
-function countOccurences(h,n){
+function countOccurences(){
 
 }
 
-function wordLengths(a){
+function wordLengths(){
 
 }
 
-function getMinMaxMean( list ){
+function getMinMaxMean(){
 
 }
 
-function findMode(a){
+function findMode(){
 
 }
