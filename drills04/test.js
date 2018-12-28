@@ -104,3 +104,4 @@ var testVals = [{
   functionToTest: 'correctCalcChecker'
 }]
 
+
