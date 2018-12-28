@@ -1,17 +1,23 @@
-- countOccurences: 
-	- given an array of words and a separate word, count how many times a particular word given occurs within that array for example:
-	- input ['dog','cat','dog','pig','canary','cat','dog'], 'dog' 
-	- returns 3
+- getPath: given a path string, return an array with the different parts of the path for 
+	- example: 'folder1/folder2/folder3' 
+	- returns ['folder1','folder2','folder3']
 
-- wordLengths: 
-	- given an array of words, return an array of numbers representing the length of each word For example: 
-	- input ['canary','silly','dog','a','mellow']) 
-	- return [6,5,3,1,6]
+- getPathParts: Given a full URL string, break it up into parts in an object For 	
+	- example: 'http://localhost:8000/happy/go/lucky/file.html' 
+	- return { protocol: 'http', host: 'localhost', port: 8000, path: '/happy/go/lucky', file: 'file.html' }
 
-- getMinMaxMean: given an array of numbers, get the minimum, maximum, and mean numbers. Return them as an object. Mean is another word for average For example:
-	- input [3,1,9,12,4] 
-	- return: {min: 1, max: 12, mean: 25.8}
+- getCapitalCount: given an array of words, return a count of how many start with capital letters, For 
+	- example: ['it','will','not','Be','long','Till','we','Are'] 
+	- returns: 3
 
-- findMode: Given an array of numbers, find the number that occurs the most often for example: 
-	- input [5,2,7,18,2,42,5,2] 
-	- returns 2, since it occurs 3 times. If 2 numbers occur the same amount, return the last one
+- findMode: correctCalcChecker: Given an array of objects with math equations, return all objects that have correct equations for 
+	- example: [ 
+		{ num1: 3, num2: 3, op: '/', result: 3}, 
+		{ num1: 12, num2: 4, op: '-', result: 8}, 
+		{ num1: 2, num2: 3, op: '+', result: 5}, 
+		{ num1: -5, num2: -2, op: '*', result: 10} 
+	] 
+	- returns [ 
+		{ num1: 12, num2: 4, op: '-', result: 8}, 
+		{ num1: 2, num2: 3, op: '+', result: 5} 
+	]
