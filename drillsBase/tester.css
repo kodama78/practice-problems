@@ -1,0 +1,32 @@
+.correct{
+  background-color: lightgreen;
+}
+.incorrect{
+  background-color: red;
+  color: white;
+}
+.correct, .incorrect{
+  font-family: monospace;
+}
+.question{
+  border-bottom: 3px solid black;
+  margin-bottom: 5px;
+}
+.question aside{
+  background-color: black;
+  font-weight: bold;
+  font-family: 'arial';
+}
+.question .correct aside, .question .incorrect aside{
+  padding: 2% 2%
+}
+.question .correct aside{
+  color: lime;
+}
+.question .incorrect aside{
+  color: red;
+}
+.inputs{
+  font-size: 90%;
+  font-weight: bold;
+}
