@@ -1,7 +1,6 @@
 
-
-function sumArray(a){
-	return a.reduce( (a, c)=> a+c,0)
+function sumArray(){
+	
 }
 
 function fitWithinVal(){

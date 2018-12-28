@@ -6,8 +6,8 @@ var testVals = [{
   testVals: {
     inputs: [
         [['how','much','wood','would','a','wood','chuck','chuck','if','a','wood','chuck','could','chuck','wood'],'wood'], 
-        [['who','what','who','when','why','who','what','how'],['who'],
-        [['someone','is','in','the','kitchen','with','dina'],['taco']
+        [['who','what','who','when','why','who','what','how'],'who'],
+        [['someone','is','in','the','kitchen','with','dina'],'taco']
       
     ],
     outputs:    
@@ -38,9 +38,7 @@ var testVals = [{
   Return them as an object.
   Mean is another word for average
   For example: [3,1,9,12,4]
-  returns: {min: 1, max: 12, mean: 25.8}
-    `,
-  }
+  returns: {min: 1, max: 12, mean: 25.8}`,
   testVals: {
     inputs: [
       [[5,-5,15,25,12,2]],
@@ -58,7 +56,7 @@ var testVals = [{
       returns 2, since it occurs 3 times.  If 2 numbers occur the same amount, return the last one`,
   testVals: {
     inputs: [
-      [[2,4,6,3,4,53,2,4,3,5]],
+      [[2,4,6,3,4,3,2,4,3,5]],
       [[4,6,3,6,1,8,4,3,3,4,5,6,6,7]],
     ],
     outputs: [
