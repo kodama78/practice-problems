@@ -55,9 +55,9 @@ var testVals = [{
   returns: 3`,
   testVals: {
     inputs: [
-      ['oh','what','A','glorious','Day'],
-      ['YOU','KNOW','it'],
-      ['not','a','sausage']
+      [['oh','what','A','glorious','Day']],
+      [['YOU','KNOW','it']],
+      [['not','a','sausage']]
     ],
     outputs: [
       2,2,0
@@ -82,7 +82,7 @@ var testVals = [{
         { num1: 3, num2: 3, op: '/', result: 3},
         { num1: 12, num2: 4, op: '-', result: 8},
         { num1: 2, num2: 3, op: '+', result: 5},
-        { num1: -5, num2: -2, op: '*', result: 10}
+        { num1: -5, num2: -2, op: '*', result: -10}
       ]],
       [[
         { num1: 2, num2: 1, op: '+', result: 3},

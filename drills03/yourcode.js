@@ -8,10 +8,14 @@ function getPathParts(){
 
 }
 
-function getCapitalCount(  ){
+function getCapitalCount(){
 
 }
 
 function correctCalcChecker(){
+
+}
+
+function doMath(){
 
 }
