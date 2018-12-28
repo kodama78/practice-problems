@@ -10,7 +10,7 @@
 	- example: ['it','will','not','Be','long','Till','we','Are'] 
 	- returns: 3
 
-- findMode: correctCalcChecker: Given an array of objects with math equations, return all objects that have correct equations for 
+- correctCalcChecker: Given an array of objects with math equations, return all objects that have correct equations for 
 	- example: [ 
 		{ num1: 3, num2: 3, op: '/', result: 3}, 
 		{ num1: 12, num2: 4, op: '-', result: 8}, 

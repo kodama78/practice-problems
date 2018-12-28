@@ -1,7 +1,7 @@
 ### Drills Level 0
 - <a href="https://github.com/Learning-Fuze/practice-problems/blob/master/drills01/README.md" target="_blank">sumArray<br>fitWithinVal<br>getAllNamesShorterThan<br>makeLabel</a>
 - <a href="https://github.com/Learning-Fuze/practice-problems/blob/master/drills02/README.md" target="_blank">countOccurences<br>wordLengths<br>getMinMaxMean<br>findMode</a>
-- <a href="https://github.com/Learning-Fuze/practice-problems/blob/master/drills03/README.md" target="_blank">countOccurences<br>wordLengths<br>getMinMaxMean<br>findMode</a>
+- <a href="https://github.com/Learning-Fuze/practice-problems/blob/master/drills03/README.md" target="_blank">getPath<br>getPathParts<br>getCapitalCount<br>correctCalcChecker</a>
 
 
 ### Level 0
