@@ -1,3 +1,6 @@
+### Drills Level 0
+- <a href="drills0/drills.html" target="_blank">sumArray<br>fitWithinVal<br>getAllNamesShorterThan<br>makeLabel</a>
+
 ### Level 0
 - <a href="practice29/README.md" target="_blank">do math</a>
 - <a href="practice30/README.md" target="_blank">random number or array element</a>
