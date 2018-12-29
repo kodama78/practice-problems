@@ -1,23 +1,17 @@
-- getPath: given a path string, return an array with the different parts of the path for 
-	- example: 'folder1/folder2/folder3' 
-	- returns ['folder1','folder2','folder3']
+- changeElements: Change any element with a given class (for example "numConvert")
+	- grab their text, which will be a number in word form (ie one, three, nine)
+	- The numbers will only be from one to nine
+	- Change their text to the numeric form (1-9)
+	- If it doesn't understand the word, it leaves it unchanged
 
-- getPathParts: Given a full URL string, break it up into parts in an object For 	
-	- example: 'http://localhost:8000/happy/go/lucky/file.html' 
-	- return { protocol: 'http', host: 'localhost', port: 8000, path: '/happy/go/lucky', file: 'file.html' }
+- appendTextToElement: given a particular element, replace its text with the original text plus the word 2nd parameter given.
+	- For example, if you got changeElements('.helloElements','hello'), all elements with a class of helloElements would have their text concatenated with "hello"
+ 	- For example, if the text of the element was "yo", it would be changed to "yohello"`,
 
-- getCapitalCount: given an array of words, return a count of how many start with capital letters, For 
-	- example: ['it','will','not','Be','long','Till','we','Are'] 
-	- returns: 3
 
-- correctCalcChecker: Given an array of objects with math equations, return all objects that have correct equations for 
-	- example: [ 
-		{ num1: 3, num2: 3, op: '/', result: 3}, 
-		{ num1: 12, num2: 4, op: '-', result: 8}, 
-		{ num1: 2, num2: 3, op: '+', result: 5}, 
-		{ num1: -5, num2: -2, op: '*', result: 10} 
-	] 
-	- returns [ 
-		{ num1: 12, num2: 4, op: '-', result: 8}, 
-		{ num1: 2, num2: 3, op: '+', result: 5} 
-	]
+- addClass: Make a function that takes in 2 strings.  The first selector it looks for, the 2nd it adds as a class
+	- For example, if you had addClass(".haha","hehe"), then every element
+	- with a class of haha would now also have a class of hehe.
+  Additionally, return the number of elements so changed`,
+
+- removeElements: given a particular selector, remove any element that matches that selector

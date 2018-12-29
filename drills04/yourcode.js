@@ -1,21 +1,19 @@
 
 
-function getPath(){
+function changeElements(ele){
+	$(ele).each( (index, element)=>{ $(element).text(lCon($(element).text()) || $(element).text()  )})
 
 }
 
-function getPathParts(){
+function appendTextToElement(target, text){
+	$(target).each( (index, element)=>{ $(element).text($(element).text()+text)})
 
 }
 
-function getCapitalCount(){
-
+function addClass(target, addClass){
+	return $(target).addClass(addClass).length;
 }
 
-function correctCalcChecker(){
-
-}
-
-function doMath(){
-
+function removeElements(targetElement){
+	$(targetElement).remove();
 }

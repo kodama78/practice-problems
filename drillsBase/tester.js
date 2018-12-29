@@ -8,18 +8,34 @@ function unitTest(testData) {
       var convertedInputs = currentTestSet.inputs[ioIndex].map( param=> typeof param==='function'?param.toString():convertFunctionContentsToString(param));
       var jsonInputs = JSON.stringify(convertedInputs, null, 2);
       var testOutputs = currentTestSet.outputs[ioIndex];
+      if(typeof window[testData[testI].functionToTest] !== 'function'){
+        console.error(testData[testI].functionToTest + ' is not defined.  Did you rename/remove it from yourcode.js?');
+        return false;
+      }
       var result = window[testData[testI].functionToTest].apply(null, testInputs);
       var jsonResult = JSON.stringify(result, null, 2);
+      var testFunction = ()=>true;
+      var testErrorMessage = false;
+      if(currentTestSet.testFunctions && currentTestSet.testFunctions[ioIndex]){
+        var testFunction = currentTestSet.testFunctions[ioIndex].test;
+        testErrorMessage = currentTestSet.testFunctions[ioIndex].message;
+        if(testFunction()){
+          testErrorMessage = "Passed: " + testErrorMessage;
+        } else {
+          testErrorMessage = "Failed: " + testErrorMessage;
+        }
+      }
+      
       if(typeof testOutputs === 'function'){
         testOutputs = testOutputs.apply(null, testInputs);
       }
       var jsonAnswer = JSON.stringify(testOutputs, null, 2);
       
       var status = 'incorrect';
-      if (jsonResult === jsonAnswer) {
+      if (jsonResult === jsonAnswer && testFunction()) {
         status = 'correct';
       }
-      displayMessage('<strong>Question ' + (testI + 1) + ' Test ' + (ioIndex + 1) + '&gt;&gt;&gt;</strong> ' + testData[testI].question, jsonInputs, jsonAnswer, jsonResult, status);
+      displayMessage('<strong>Question ' + (testI + 1) + ' Test ' + (ioIndex + 1) + '&gt;&gt;&gt;</strong> ' + testData[testI].question, jsonInputs, jsonAnswer, jsonResult, status, testErrorMessage);
     }
   }
 }
@@ -59,7 +75,7 @@ function handleStartTest(){
   unitTest(testVals);
 }
 
-function displayMessage(questionText, inputs, expected, answer, mode) {
+function displayMessage(questionText, inputs, expected, answer, mode, functionTestMessage) {
   var questionContainer = $("<div>", {
     html: questionText,
     'class': 'question'
@@ -75,6 +91,14 @@ function displayMessage(questionText, inputs, expected, answer, mode) {
     'class': mode,
     html: `<aside>Expected:</aside> <pre>${expected}</pre><aside>Your answer:</aside><pre>${answer}<pre>`
   })
-  questionContainer.append(inputContainer, resultContainer, answerContainer);
+  var testContainer = ''
+  if(functionTestMessage){
+    testContainer = $("<div>", {
+      'class': mode,
+      html: `<aside>Additional Test:</aside> ${functionTestMessage}`
+    })
+  }
+  
+  questionContainer.append(inputContainer, resultContainer, answerContainer, testContainer);
   $("body").append(questionContainer);
 }
