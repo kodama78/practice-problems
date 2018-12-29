@@ -3,7 +3,7 @@
 - <a href="https://github.com/Learning-Fuze/practice-problems/blob/master/drills02/README.md" target="_blank">countOccurences<br>wordLengths<br>getMinMaxMean<br>findMode</a>
 - <a href="https://github.com/Learning-Fuze/practice-problems/blob/master/drills03/README.md" target="_blank">getPath<br>getPathParts<br>getCapitalCount<br>correctCalcChecker</a>
 - <a href="https://github.com/Learning-Fuze/practice-problems/blob/master/drills04/README.md" target="_blank">jQuery practice problems: changeElements<br>appendTextToElement<br>addClass<br>removeElements</a>
--<a href="https://github.com/Learning-Fuze/practice-problems/blob/master/drills04/README.md" target="_blank">jQuery practice problem: populateRecords</a>
+- <a href="https://github.com/Learning-Fuze/practice-problems/blob/master/drills04/README.md" target="_blank">jQuery practice problem: populateRecords</a>
 
 
 ### Level 0
