@@ -7,7 +7,7 @@
     -      { type: 'charge', source: 'AT&T', amount: '130.00'},
     -      { type: 'cash advance', source: 'Chase', amount: '20.00'}
   -  ]
-    <img src="outputscreen1.png">
+  -  <img src="outputscreen1.png">
   - [
     -     { type: 'charge', source: 'Fudruckers', amount: '23.50'},
     -      { type: 'charge', source: 'Carls Junior', amount: '17.30'},
@@ -15,7 +15,7 @@
     -      { type: 'charge', source: 'Olive Garden', amount: '31.20'},
     -      { type: 'charge', source: 'Heart Doctor', amount: '1000.00'}
     -    ]
-    <img src="outputscreen2.png">
+  -  <img src="outputscreen2.png">
   - Return an object with the total amount of charges 
   and the total amount charges and cash advances in an object, like this: 
   	- { charge: 27.50, 'cash advance': 40.10 }
