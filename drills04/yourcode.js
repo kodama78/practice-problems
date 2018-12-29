@@ -1,19 +1,17 @@
 
 
-function changeElements(ele){
-	$(ele).each( (index, element)=>{ $(element).text(lCon($(element).text()) || $(element).text()  )})
+function changeElements(){
 
 }
 
-function appendTextToElement(target, text){
-	$(target).each( (index, element)=>{ $(element).text($(element).text()+text)})
+function appendTextToElement(){
 
 }
 
-function addClass(target, addClass){
-	return $(target).addClass(addClass).length;
+function addClass(){
 }
 
-function removeElements(targetElement){
-	$(targetElement).remove();
+function removeElements(){
+
 }
+
