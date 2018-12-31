@@ -54,7 +54,8 @@ var testVals = [{
   functionToTest: 'removeClassFromElement'
 },
 {
-  question: `toggleClassOnElement: 
+  question: `toggleClassOnElement: create a function that takes in an 
+  element and a class.  It toggles the class on the target element
   `,
   testVals: {
     inputs: [
