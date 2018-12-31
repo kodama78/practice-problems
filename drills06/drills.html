@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="description" content="function drills 8">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>function drills</title>
+  <link rel="stylesheet" type="text/css" href="../drillsBase/tester.css">
+  <link rel="stylesheet" type="text/css" href="test.css">
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script type="text/javascript" src="../drillsBase/tester.js"></script>
+  <script type="text/javascript" src="yourcode.js"></script>
+  <script type="text/javascript" src="test.js" defer></script>
+
+</head>
+<body>
+<button id="runTestButton">Run Tests</button>
+<label for="runAuto"><input type="checkbox" id="runAuto"> Run automatically </label>
+
+<div id="testArea">
+	<div class="wasRed">I should no longer be red</div>
+	<div id="redNotBlue" class="wasBlue">I should be red, not blue</div>
+	<div class="wasBlue limeBorder">I should remain blue</div>
+	<div class="wasGreen needBack">green text, not green background</div>
+	<div id="hideMe">I will disappear</div>
+	<div id="removeChildren">
+		I have a text child node
+		<div>and a div child node with its own text
+			<p>and that div as a p tag with a text child node</p>
+		</div>
+	</div>
+	<img id="targetImg" src="http://loltheists.com/wp-content/uploads/2012/03/this-bit-needs-work.jpg">
+	<div id="removeElement">I will be removed</div>
+	<div class="addID">If I get an ID, I will turn blue</div>
+	<div id="getPos">put my position in me</div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,31 @@
+.wasRed{
+	background-color: red;
+	color: white;
+}
+.wasGreen{
+	background-color: green;
+	color: white;
+	border: 2px solid black;
+}
+.wasBlue{
+	background-color: blue;
+}
+.willBeGreenText{
+	background-color: white;
+	color: green;
+}
+#blueID{
+	background-color: lightblue;
+}
+.limeBorder{
+	border: 3px solid lime;
+}
+#getPos{
+	position: absolute;
+	left: 220px;
+	top: 220px;
+	background-color: white;
+	z-index: 1;
+	padding: 2px;
+	border: 1px solid black;
+}
