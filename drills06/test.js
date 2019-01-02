@@ -1,6 +1,5 @@
 
 
-
 var testVals = [{
   question: `removeClassFromElement: create a function that takes in 
   an element, and the class to remove from that element.
@@ -28,9 +27,18 @@ var testVals = [{
         message: 'Should have removed class "wasRed" from all elements with a class of .wasRed.  If it is wrong, did you use toggle instead of hide?',
         test: ()=> {
           let correctCheck = 0;
-          if( $('.wasRed').length === 0 ){ correctCheck++ }
+          if( $('.wasRed').length === 0 ){ 
+            correctCheck++ 
+          } else {
+            return 'there was an element with class wasRed, there should be none'
+          }
           removeClassFromElement('.hasRed','hasRed')
-          if( $('.wasRed').length === 0 ){ correctCheck++ }
+          if( $('.wasRed').length === 0 ){ 
+            correctCheck++ 
+          } else {
+            return 'tried to remove wasRed again.  It should not be present, but now it is!  Did you use toggleClass?'
+          }
+            
           return correctCheck === 2;
         }
         

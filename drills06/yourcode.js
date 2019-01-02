@@ -1,7 +1,7 @@
 
 
-function removeClassFromElement(target, classToRemove){
-	$(target).removeClass(classToRemove)
+function removeClassFromElement(){
+	
 }
 
 function toggleClassOnElement(){

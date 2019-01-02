@@ -32,7 +32,6 @@ function unitTest(testData) {
         testOutputs = testOutputs.apply(null, testInputs);
       }
       var jsonAnswer = JSON.stringify(testOutputs, null, 2);
-      
       var status = 'incorrect';
       if (jsonResult === jsonAnswer && testResult===true) {
         status = 'correct';

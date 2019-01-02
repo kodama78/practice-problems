@@ -1,1 +1,10 @@
-yourcss.css
+
+.makeRed{
+	color: red;
+}
+.makeRed.noMakeGreen{
+	color: green;
+}
+#iShouldBeYellow{
+	color: yellow;
+}
