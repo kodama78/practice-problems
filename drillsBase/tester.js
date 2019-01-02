@@ -19,10 +19,13 @@ function unitTest(testData) {
       if(currentTestSet.testFunctions && currentTestSet.testFunctions[ioIndex]){
         var testFunction = currentTestSet.testFunctions[ioIndex].test;
         testErrorMessage = currentTestSet.testFunctions[ioIndex].message;
-        if(testFunction()){
+        var testResult = testFunction(result);
+        debugger;
+        if(testResult === true){
           testErrorMessage = "Passed: " + testErrorMessage;
         } else {
-          testErrorMessage = "Failed: " + testErrorMessage;
+          var additionalMessage = testResult!==false ? testResult : '';
+          testErrorMessage = "Failed: " + testErrorMessage + '<br>' + testResult;
         }
       }
       
@@ -32,7 +35,7 @@ function unitTest(testData) {
       var jsonAnswer = JSON.stringify(testOutputs, null, 2);
       
       var status = 'incorrect';
-      if (jsonResult === jsonAnswer && testFunction()) {
+      if (jsonResult === jsonAnswer && testResult===true) {
         status = 'correct';
       }
       displayMessage({
@@ -41,7 +44,7 @@ function unitTest(testData) {
         expected: jsonAnswer, 
         answer: jsonResult, 
         mode: status, 
-        testErrorMessage,
+        functionTestMessage: testErrorMessage,
         functionName: testData[testI].functionToTest
       });
     }
