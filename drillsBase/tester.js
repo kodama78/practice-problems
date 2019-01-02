@@ -20,7 +20,6 @@ function unitTest(testData) {
         var testFunction = currentTestSet.testFunctions[ioIndex].test;
         testErrorMessage = currentTestSet.testFunctions[ioIndex].message;
         var testResult = testFunction(result);
-        debugger;
         if(testResult === true){
           testErrorMessage = "Passed: " + testErrorMessage;
         } else {
