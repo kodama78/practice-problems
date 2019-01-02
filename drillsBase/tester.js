@@ -15,11 +15,12 @@ function unitTest(testData) {
       var result = window[testData[testI].functionToTest].apply(null, testInputs);
       var jsonResult = JSON.stringify(result, null, 2);
       var testFunction = ()=>true;
+      var testResult = true;
       var testErrorMessage = false;
       if(currentTestSet.testFunctions && currentTestSet.testFunctions[ioIndex]){
         var testFunction = currentTestSet.testFunctions[ioIndex].test;
         testErrorMessage = currentTestSet.testFunctions[ioIndex].message;
-        var testResult = testFunction(result);
+        testResult = testFunction(result);
         if(testResult === true){
           testErrorMessage = "Passed: " + testErrorMessage;
         } else {
