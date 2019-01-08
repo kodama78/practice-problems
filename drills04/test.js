@@ -11,7 +11,7 @@ var testVals = [{
   testVals: {
     inputs: [
         ['.numConvert'], 
-        ['.otherConver'],
+        ['.otherConvert'],
       
     ],
     outputs:    
@@ -23,14 +23,14 @@ var testVals = [{
         message: 'all .numConvert dom elements must have their text replaced with the appropriate number',
         test: ()=> {
           const expected = '12395';
-          return Object.values(document.querySelectorAll('.numConvert')).filter( (e, i)=> $(e).text() === expected[i]).length;
+          return Object.values(document.querySelectorAll('.numConvert')).filter( (e, i)=> $(e).text() === expected[i]).length === document.querySelectorAll('.numConvert').length;
         }
       },
       {
         message: 'all .otherConvert elements must have their text replaced with numbers, if the original was a text number',
         test: ()=> {
           const expected = ['4','8','what?'];
-          return Object.values(document.querySelectorAll('.otherConvert')).filter( (e, i)=> $(e).text() === expected[i]).length;
+          return Object.values(document.querySelectorAll('.otherConvert')).filter( (e, i)=> $(e).text() === expected[i]).length===document.querySelectorAll('.otherConvert');
         }
       }
     ]
@@ -54,14 +54,14 @@ var testVals = [{
         message: 'all .helloElement elements must have "hello" added to their text',
         test: ()=> {
           const expected = ['holahello', 'nihaohello'];
-          return Object.values(document.querySelectorAll('.helloElements')).filter( (e, i)=> $(e).text() === expected[i]).length;
+          return Object.values(document.querySelectorAll('.helloElements')).filter( (e, i)=> $(e).text() === expected[i]).length===document.querySelectorAll('.helloElements');
         }
       },
       {
         message: 'All .moocow elements must have "moooo" appended to their text',
         test: ()=> {
           const expected = ['chocolatemoooo', 'lactosemoooo'];
-          return Object.values(document.querySelectorAll('.moocow')).filter( (e, i)=> $(e).text() === expected[i]).length;
+          return Object.values(document.querySelectorAll('.moocow')).filter( (e, i)=> $(e).text() === expected[i]).length===document.querySelectorAll('.moocow');
         }
       }
     ]
