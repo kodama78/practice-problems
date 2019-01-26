@@ -20,6 +20,6 @@
  - 8 is tuv
  - 9 is wxyz
 }
-console.log(reverse_t9('44 444 44666 9 277733 999666888')); //hihowareyou
+console.log(reverse_t9('44 444 44666 9 277733 99966688')); //hihowareyou
 
 solution : http://jsbin.com/butapi/edit?js,console
