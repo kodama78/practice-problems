@@ -29,8 +29,9 @@ var testVals = [{
       {
         message: 'all .otherConvert elements must have their text replaced with numbers, if the original was a text number',
         test: ()=> {
+          debugger;
           const expected = ['4','8','what?'];
-          return Object.values(document.querySelectorAll('.otherConvert')).filter( (e, i)=> $(e).text() === expected[i]).length===document.querySelectorAll('.otherConvert');
+          return Object.values(document.querySelectorAll('.otherConvert')).filter( (e, i)=> $(e).text() === expected[i]).length===document.querySelectorAll('.otherConvert').length;
         }
       }
     ]
@@ -54,14 +55,14 @@ var testVals = [{
         message: 'all .helloElement elements must have "hello" added to their text',
         test: ()=> {
           const expected = ['holahello', 'nihaohello'];
-          return Object.values(document.querySelectorAll('.helloElements')).filter( (e, i)=> $(e).text() === expected[i]).length===document.querySelectorAll('.helloElements');
+          return Object.values(document.querySelectorAll('.helloElements')).filter( (e, i)=> $(e).text() === expected[i]).length===document.querySelectorAll('.helloElements').length;
         }
       },
       {
         message: 'All .moocow elements must have "moooo" appended to their text',
         test: ()=> {
           const expected = ['chocolatemoooo', 'lactosemoooo'];
-          return Object.values(document.querySelectorAll('.moocow')).filter( (e, i)=> $(e).text() === expected[i]).length===document.querySelectorAll('.moocow');
+          return Object.values(document.querySelectorAll('.moocow')).filter( (e, i)=> $(e).text() === expected[i]).length===document.querySelectorAll('.moocow').length;
         }
       }
     ]
