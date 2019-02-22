@@ -17,7 +17,7 @@ output = randomize_list(input_array);
 console.log(output); //outputs 
 <pre>[3,1,5,5,2]</pre>
 console.log(randomize_list(input_array)); //outputs 
-<pre>[1,3,5,1,2,5]</pre>
+<pre>[1,3,5,2,5]</pre>
 
 #### Put your solution in answer.js
 
