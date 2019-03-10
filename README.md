@@ -1,4 +1,14 @@
 ### Drills Level 0
+- instructions
+  - each drill set is self-grading.  It will show you which ones are wrong.
+  - put your work in the file yourcode.js
+  - do not change/remove the function names in yourcode.js, just change the contents/parameters
+  - see the results in test.html
+  - do not modify test.js
+  - the feedback in test.html will tell you what arguments the function will receive
+  - the feedback in test.html will tell you what return value is expected from your function
+  - multiple tests will be run on your function.  A solution that may work for one test may not work for the other tests.
+  
 - <a href="https://github.com/Learning-Fuze/practice-problems/blob/master/drills01/README.md" target="_blank">sumArray<br>fitWithinVal<br>getAllNamesShorterThan<br>makeLabel</a>
 - <a href="https://github.com/Learning-Fuze/practice-problems/blob/master/drills02/README.md" target="_blank">countOccurences<br>wordLengths<br>getMinMaxMean<br>findMode</a>
 - <a href="https://github.com/Learning-Fuze/practice-problems/blob/master/drills03/README.md" target="_blank">getPath<br>getPathParts<br>getCapitalCount<br>correctCalcChecker</a>
