@@ -5,19 +5,19 @@ var testVals = [{
   `,
   testVals: {
     inputs: [
-        [[4,2,3,6,7,1,8,10,9]], 
+        [[4,2,3,6,7,1,8,10,9]],
         [[24,49,63,6,79,65,60,86,94,36,40,29,42,25,12,4,83,88,4,72]],
-      
+
     ],
-    outputs:    
+    outputs:
     [  50,
        961
     ]
   },
   functionToTest: 'sumArray'
 }, {
-  question: `fitWithinVal: given an array and a number, 
-    sum the array until you reach the number.  
+  question: `fitWithinVal: given an array and a number,
+    sum the array until you reach the number.
     keep adding any values that would total below the given value
     return an array of every number you could add
     For example:  fitWithinVal( [1,100,2,4,5,6], 7)
@@ -25,7 +25,7 @@ var testVals = [{
     `,
   testVals: {
     inputs: [
-        [[4,2,3,6,7,1,8,10,9], 30], 
+        [[4,2,3,6,7,1,8,10,9], 30],
         [[24,49,63,6,79,65,60,86,94,36,40,29,42,25,12,4,83,88,4,72], 500],
     ],
     outputs: [
@@ -34,7 +34,7 @@ var testVals = [{
   },
   functionToTest: 'fitWithinVal'
 }, {
-  question: `getAllNamesShorterThan: Given an array of names and a value, 
+  question: `getAllNamesShorterThan: Given an array of names and a value,
     return an array of only the names shorter than the given value
     for example: getAllNamesShorterThan(['Clyde','Sue','Jerry','Jo'], 4)
     would return ['Sue','Jo']
@@ -51,7 +51,7 @@ var testVals = [{
   },
   functionToTest: 'getAllNamesShorterThan'
 }, {
-  question: `given an object with data for a person in it, generate a 
+  question: `given an object with data for a person in it, generate a
   shipping label in the following form:
     Miss Jane Doe<br>
     123 Any St<br>
@@ -71,4 +71,3 @@ Kansas City, Mo 63102`
   },
   functionToTest: 'makeLabel'
 }]
-
