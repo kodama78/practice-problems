@@ -25,10 +25,41 @@ function fitWithinVal(list, value){
   return fitList;
 }
 
-function getAllNamesShorterThan(){
-  //test update github
+function getAllNamesShorterThan(names, numberOfLetters){
+  let shorterNames = [];
+  for (let i = 0; i < names.length; i++) {
+    if (names[i].length <= numberOfLetters) {
+      shorterNames.push(names[i]);
+    }
+  }
+  return shorterNames;
 }
-
-function makeLabel(){
+// [
+// {
+//   "familyName": "McGee",
+//     "givenName": "Chuckles",
+//       "greeting": "Miss.",
+//         "age": 28,
+//           "height": 165,
+//             "colors": {
+//     "eye": "green",
+//       "hair": "green"
+//   },
+//   "home address": {
+//     "streetNumber": "12345",
+//       "streetName": "Any St",
+//         "state": "Mo",
+//           "zip": 63102,
+//             "city": "Kansas City"
+//   }
+// }
+// ]
+//- return "Miss. Chuckles McGee\n12345 Any St\nKansas City, Mo 63102"
+function makeLabel(customer){
+  let shipLabel = "";
+  let lineOne = `${customer[0].greeting} ${customer[0].givenName} `;
+  lineOne += `${customer[0].familyName}`;
+  let lineTwo = "";
+  let lineThree = "";
 
 }
